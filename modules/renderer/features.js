@@ -173,11 +173,13 @@ export function rendererFeatures(context) {
 
    defineFeature('DamagedConcrete', function isPoint(entity, resolver, geometry) {
         return geometry === 'point' &&
-		entity.tags.material === '1' &&
-		(
+		!(
+			entity.tags.material === '1' &&
+			(
 			entity.tags.damage === 'partial' ||
 			entity.tags.damage === 'significant' ||
 			entity.tags.damage === 'destroyed'
+			)
 		)
     }, 200);
 
