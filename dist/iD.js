@@ -56747,6 +56747,29 @@ function rendererFeatures(context) {
     });
 
 
+   defineFeature('DamagedConcrete', function isPoint(entity, resolver, geometry) {
+        return geometry === 'point' &&
+		entity.tags.material === '1' &&
+		(
+			entity.tags.damage === 'partial' ||
+			entity.tags.damage === 'significant' ||
+			entity.tags.damage === 'destroyed'
+		)
+    }, 200);
+
+    defineFeature('DamagedConcrete', function isWater(entity) {
+        return (
+            !!entity.tags.waterway ||
+            entity.tags.natural === 'water' ||
+            entity.tags.natural === 'coastline' ||
+            entity.tags.natural === 'bay' ||
+            entity.tags.landuse === 'pond' ||
+            entity.tags.landuse === 'basin' ||
+            entity.tags.landuse === 'reservoir' ||
+            entity.tags.landuse === 'salt_pond'
+        );
+    });
+
     function features() {}
 
 
