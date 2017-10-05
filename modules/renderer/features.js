@@ -163,15 +163,7 @@ export function rendererFeatures(context) {
         return false;
     });
 
-    // Lines or areas that don't match another feature filter.
-    // IMPORTANT: The 'others' feature must be the last one defined,
-    //   so that code in getMatches can skip this test if `hasMatch = true`
-    defineFeature('others', function isOther(entity, resolver, geometry) {
-        return (geometry === 'line' || geometry === 'area');
-    });
-
-
-   defineFeature('DamagedConcrete', function isPoint(entity, resolver, geometry) {
+   defineFeature('damaged_concrete', function isPoint(entity, resolver, geometry) {
         return geometry === 'point' &&
 		!(
 			entity.tags.material === '1' &&
@@ -183,17 +175,11 @@ export function rendererFeatures(context) {
 		)
     }, 200);
 
-    defineFeature('DamagedConcrete', function isWater(entity) {
-        return (
-            !!entity.tags.waterway ||
-            entity.tags.natural === 'water' ||
-            entity.tags.natural === 'coastline' ||
-            entity.tags.natural === 'bay' ||
-            entity.tags.landuse === 'pond' ||
-            entity.tags.landuse === 'basin' ||
-            entity.tags.landuse === 'reservoir' ||
-            entity.tags.landuse === 'salt_pond'
-        );
+    // Lines or areas that don't match another feature filter.
+    // IMPORTANT: The 'others' feature must be the last one defined,
+    //   so that code in getMatches can skip this test if `hasMatch = true`
+    defineFeature('others', function isOther(entity, resolver, geometry) {
+        return (geometry === 'line' || geometry === 'area');
     });
 
     function features() {}

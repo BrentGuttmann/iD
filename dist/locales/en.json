@@ -524,6 +524,10 @@
                 "description": "Past/Future",
                 "tooltip": "Proposed, Construction, Abandoned, Demolished, etc."
             },
+            "damaged_concrete": {
+                "description": "Damaged Concrete Buildings",
+                "tooltip": "Concrete buildings that are partial, signifiant damage or destroyed."
+            },
             "others": {
                 "description": "Others",
                 "tooltip": "Everything Else"
