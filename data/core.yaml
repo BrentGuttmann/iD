@@ -422,9 +422,48 @@ en:
     past_future:
       description: Past/Future
       tooltip: "Proposed, Construction, Abandoned, Demolished, etc."
-    damaged_concrete:
-      description: Damaged Concrete Buildings
-      tooltip: "Concrete buildings that are partial, signifiant damage or destroyed."
+    roof_none:
+      description: No roof damage
+      tooltip: "Roof is not damaged."
+    roof_partial:
+      description: Partial roof damage
+      tooltip: "Roof is partially damaged."
+    roof_significant:
+      description: Significant roof damage
+      tooltip: "Roof is significantly damaged."
+    roof_destroyed:
+      description: Roof and walls destroyed
+      tooltip: "Roofs and walls are down."
+    material_concrete:
+      description: Concrete roof
+      tooltip: "Roof made of concrete."
+    material_tiles:
+      description: Tiled roof
+      tooltip: "Roof tiled."
+    material_metal:
+      description: Metal roof
+      tooltip: "Roof of metal."
+    material_unknown:
+      description: Roof material unknown
+      tooltip: "Roof material unknown."
+    material_mixed:
+      description: Mixed roof
+      tooltip: "Roof made of different materials."
+    material_tiles_metal:
+      description: Roof tiles or metal
+      tooltip: "Roof made of either tiles or metal."
+    roof_hipped:
+      description: Hipped roof
+      tooltip: "Hipped roof."
+    roof_pitch:
+      description: Pitch roof
+      tooltip: "Pitch roof."
+    roof_flat:
+      description: Flat roof
+      tooltip: "Flat roof."
+    roof_unknown:
+      description: Unknown roof type
+      tooltip: "Unknown roof type."
     others:
       description: Others
       tooltip: "Everything Else"
