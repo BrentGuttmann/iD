@@ -524,60 +524,60 @@
                 "description": "Past/Future",
                 "tooltip": "Proposed, Construction, Abandoned, Demolished, etc."
             },
-            "roof_none": {
-                "description": "No roof damage",
+            "damage_none": {
+                "description": "Damage - none",
                 "tooltip": "Roof is not damaged."
             },
-            "roof_partial": {
-                "description": "Partial roof damage",
+            "damage_partial": {
+                "description": "Damage - partial",
                 "tooltip": "Roof is partially damaged."
             },
-            "roof_significant": {
-                "description": "Significant roof damage",
+            "damage_significant": {
+                "description": "Damage - significant",
                 "tooltip": "Roof is significantly damaged."
             },
-            "roof_destroyed": {
-                "description": "Roof and walls destroyed",
+            "damage_destroyed": {
+                "description": "Damage - destroyed",
                 "tooltip": "Roofs and walls are down."
             },
             "material_concrete": {
-                "description": "Concrete roof",
+                "description": "Material - concrete",
                 "tooltip": "Roof made of concrete."
             },
             "material_tiles": {
-                "description": "Tiled roof",
+                "description": "Material - tiled",
                 "tooltip": "Roof tiled."
             },
             "material_metal": {
-                "description": "Metal roof",
+                "description": "Material - metal",
                 "tooltip": "Roof of metal."
             },
             "material_unknown": {
-                "description": "Roof material unknown",
+                "description": "Material - unknown",
                 "tooltip": "Roof material unknown."
             },
             "material_mixed": {
-                "description": "Mixed roof",
+                "description": "Material - mixed",
                 "tooltip": "Roof made of different materials."
             },
             "material_tiles_metal": {
-                "description": "Roof tiles or metal",
+                "description": "Material - tiles or metal",
                 "tooltip": "Roof made of either tiles or metal."
             },
             "roof_hipped": {
-                "description": "Hipped roof",
+                "description": "Roof type - hipped",
                 "tooltip": "Hipped roof."
             },
             "roof_pitch": {
-                "description": "Pitch roof",
+                "description": "Roof type - pitch",
                 "tooltip": "Pitch roof."
             },
             "roof_flat": {
-                "description": "Flat roof",
+                "description": "Roof type - flat",
                 "tooltip": "Flat roof."
             },
             "roof_unknown": {
-                "description": "Unknown roof type",
+                "description": "Roof type - unknown",
                 "tooltip": "Unknown roof type."
             },
             "others": {
