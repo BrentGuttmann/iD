@@ -84,6 +84,7 @@ export function rendererFeatures(context) {
         return geometry === 'point';
     }, 200);
 
+    /*
     defineFeature('traffic_roads', function isTrafficRoad(entity) {
         return traffic_roads[entity.tags.highway];
     });
@@ -162,18 +163,28 @@ export function rendererFeatures(context) {
         }
         return false;
     });
+    */
 
-   defineFeature('damaged_concrete', function isPoint(entity, resolver, geometry) {
-        return geometry === 'point' &&
-		!(
-			entity.tags.material === '1' &&
-			(
-			entity.tags.damage === 'partial' ||
-			entity.tags.damage === 'significant' ||
-			entity.tags.damage === 'destroyed'
-			)
-		)
+   defineFeature('partial', function isPoint(entity, resolver, geometry) {
+	_features.partial.enabled = false;
+        return geometry === 'point' &&	entity.tags.damage === 'partial';
     }, 200);
+
+   defineFeature('significant', function isPoint(entity, resolver, geometry) {
+	_features.significant.enabled = false;
+        return geometry === 'point' &&	entity.tags.damage === 'significant';
+    }, 200);
+
+   defineFeature('destroyed', function isPoint(entity, resolver, geometry) {
+	_features.destroyed.enabled = false;
+        return geometry === 'point' &&	entity.tags.damage === 'destroyed';
+    }, 200);
+
+    defineFeature('concrete', function isPoint(entity, resolver, geometry) {
+	_features.concrete.enabled = false;
+        return geometry === 'point' &&	entity.tags.material === '1';
+    }, 200);
+
 
     // Lines or areas that don't match another feature filter.
     // IMPORTANT: The 'others' feature must be the last one defined,
