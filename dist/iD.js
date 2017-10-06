@@ -56743,72 +56743,72 @@ function rendererFeatures(context) {
 
    defineFeature('roof_none', function isPoint(entity, resolver, geometry) {
 	_features.roof_none.enabled = false;
-        return !(geometry === 'point' && entity.tags.damage === 'none');
+        return (geometry === 'point' && entity.tags.damage === 'none');
     }, 200);
 
    defineFeature('roof_partial', function isPoint(entity, resolver, geometry) {
 	_features.roof_partial.enabled = false;
-        return !(geometry === 'point' && entity.tags.damage === 'partial');
+        return (geometry === 'point' && entity.tags.damage === 'partial');
     }, 200);
 
    defineFeature('roof_significant', function isPoint(entity, resolver, geometry) {
 	_features.roof_significant.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.damage === 'significant');
+        return (geometry === 'point' &&	entity.tags.damage === 'significant');
     }, 200);
 
    defineFeature('roof_destroyed', function isPoint(entity, resolver, geometry) {
 	_features.roof_destroyed.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.damage === 'destroyed');
+        return (geometry === 'point' &&	entity.tags.damage === 'destroyed');
     }, 200);
 
     defineFeature('material_concrete', function isPoint(entity, resolver, geometry) {
 	_features.material_concrete.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.material === '1');
+        return (geometry === 'point' &&	entity.tags.material === '1');
     }, 200);
 
     defineFeature('material_tiles', function isPoint(entity, resolver, geometry) {
 	_features.material_tiles.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.material === '2');
+        return (geometry === 'point' &&	entity.tags.material === '2');
     }, 200);
 
     defineFeature('material_metal', function isPoint(entity, resolver, geometry) {
 	_features.material_metal.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.material === '3');
+        return (geometry === 'point' &&	entity.tags.material === '3');
     }, 200);
 
     defineFeature('material_unknown', function isPoint(entity, resolver, geometry) {
 	_features.material_unknown.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.material === '4');
+        return (geometry === 'point' &&	entity.tags.material === '4');
     }, 200);
 
     defineFeature('material_mixed', function isPoint(entity, resolver, geometry) {
 	_features.material_mixed.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.material === '5');
+        return (geometry === 'point' &&	entity.tags.material === '5');
     }, 200);
 
     defineFeature('material_tiles_metal', function isPoint(entity, resolver, geometry) {
 	_features.material_tiles_metal.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.material === '6');
+        return (geometry === 'point' &&	entity.tags.material === '6');
     }, 200);
 
     defineFeature('roof_hipped', function isPoint(entity, resolver, geometry) {
 	_features.roof_hipped.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.roof === 'hipped');
+        return (geometry === 'point' &&	entity.tags.roof === 'hipped');
     }, 200);
 
     defineFeature('roof_pitch', function isPoint(entity, resolver, geometry) {
 	_features.roof_pitch.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.roof === 'pitch');
+        return (geometry === 'point' &&	entity.tags.roof === 'pitch');
     }, 200);
 
     defineFeature('roof_flat', function isPoint(entity, resolver, geometry) {
 	_features.roof_flat.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.roof === 'flat');
+        return (geometry === 'point' &&	entity.tags.roof === 'flat');
     }, 200);
 
     defineFeature('roof_unknown', function isPoint(entity, resolver, geometry) {
 	_features.roof_unknown.enabled = false;
-        return !(geometry === 'point' &&	entity.tags.roof === 'unknown');
+        return (geometry === 'point' &&	entity.tags.roof === 'unknown');
     }, 200);
 
 
