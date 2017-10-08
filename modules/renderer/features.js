@@ -181,6 +181,10 @@ export function rendererFeatures(context) {
         return (geometry === 'point' &&	entity.tags.damage === 'destroyed');
     }, 200);
 
+   defineFeature('damage_unknown', function isPoint(entity, resolver, geometry) {
+        return (geometry === 'point' &&	entity.tags.damage === 'unknown');
+    }, 200);
+
     defineFeature('material_concrete', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.material === '1');
     }, 200);
