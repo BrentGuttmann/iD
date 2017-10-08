@@ -540,6 +540,10 @@
                 "description": "Damage - destroyed",
                 "tooltip": "Roofs and walls are down."
             },
+            "damage_unknown": {
+                "description": "Damage - unknown",
+                "tooltip": "Roof damage cannot be determined."
+            },
             "material_concrete": {
                 "description": "Material - concrete",
                 "tooltip": "Roof made of concrete."
