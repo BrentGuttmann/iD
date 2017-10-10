@@ -82,7 +82,7 @@ export function rendererFeatures(context) {
 
     defineFeature('points', function isPoint(entity, resolver, geometry) {
         return geometry === 'point';
-    }, 200);
+    });
 
     /*
     defineFeature('traffic_roads', function isTrafficRoad(entity) {
@@ -167,63 +167,63 @@ export function rendererFeatures(context) {
 
    defineFeature('damage_none', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' && entity.tags.damage === 'none');
-    }, 200);
+    });
 
    defineFeature('damage_partial', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' && entity.tags.damage === 'partial');
-    }, 200);
+    });
 
    defineFeature('damage_significant', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.damage === 'significant');
-    }, 200);
+    });
 
    defineFeature('damage_destroyed', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.damage === 'destroyed');
-    }, 200);
+    });
 
    defineFeature('damage_unknown', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.damage === 'unknown');
-    }, 200);
+    });
 
     defineFeature('material_concrete', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.material === '1');
-    }, 200);
+    });
 
     defineFeature('material_tiles', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.material === '2');
-    }, 200);
+    });
 
     defineFeature('material_metal', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.material === '3');
-    }, 200);
+    });
 
     defineFeature('material_unknown', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.material === '4');
-    }, 200);
+    });
 
     defineFeature('material_mixed', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.material === '5');
-    }, 200);
+    });
 
     defineFeature('material_tiles_metal', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.material === '6');
-    }, 200);
+    });
 
     defineFeature('roof_hipped', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.roof === 'hipped');
-    }, 200);
+    });
 
     defineFeature('roof_pitch', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.roof === 'pitch');
-    }, 200);
+    });
 
     defineFeature('roof_flat', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.roof === 'flat');
-    }, 200);
+    });
 
     defineFeature('roof_unknown', function isPoint(entity, resolver, geometry) {
         return (geometry === 'point' &&	entity.tags.roof === 'unknown');
-    }, 200);
+    });
 
 
     // Lines or areas that don't match another feature filter.
